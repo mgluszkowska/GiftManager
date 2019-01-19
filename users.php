@@ -33,3 +33,7 @@ foreach($data as $item){
     </body>
 
 </html>
+    
+if(isset($_POST['sub'])) {
+    echo "Wishlist of a user will be here";
+    }
