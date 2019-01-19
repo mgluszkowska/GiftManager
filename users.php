@@ -1,3 +1,11 @@
+<script type="text/javascript">
+  function redir() {
+    window.location = "gifts.php";
+  }
+</script>
+
+
+
 <html>
     <head>
         <title>Użytkownicy</title>
@@ -26,9 +34,7 @@ foreach($data as $item){
         
         
         
-        <td><form id="" action="" method="post">";
-   <input type="submit" id="submit" name="submit" value="Zobacz listę życzeń" />
-</form></td>
+        <td><input type="button" value="redirect" onclick="redir();" /></td>
     </tr>
 <?php
 } 
