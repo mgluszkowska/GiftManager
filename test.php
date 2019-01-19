@@ -18,7 +18,7 @@ foreach($data as $item){
     //$price = $item->price."";
     //$link = $item->link."";
     //echo "Item: ".$name." Price: ".price." Link: ".$link 
-    echo "Item"
+    echo "Item";
 }
 
 ?> </p>
