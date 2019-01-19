@@ -8,8 +8,4 @@ try {
 } catch (HttpException $ex) {
     echo $ex;
 }
-if ($_SERVER['REQUEST_METHOD']== "POST") {
- $mes =   $_POST["message"];
-    echo $mes;
-}
 ?>
