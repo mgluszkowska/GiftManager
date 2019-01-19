@@ -14,11 +14,11 @@
 $json = file_get_contents('http://irizar.ehost.pl/martik97/items.json');
 $data = json_decode($json);
 foreach($data as $item){
-    //$name = $item->name."";
-    //$price = $item->price."";
-    //$link = $item->link."";
-    //echo "Item: ".$name." Price: ".price." Link: ".$link 
-    echo "Item";
+    $name = $item->name."";
+    $price = $item->price."";
+    $link = $item->link."";
+    echo "Item: ".$name." Price: ".price." Link: ".$link; 
+    //echo "Item"
 }
 
 ?> </p>
