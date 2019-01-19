@@ -12,13 +12,13 @@
     //echo "Chill";
 
 $json = file_get_contents('http://irizar.ehost.pl/martik97/items.json');
-$json = json_decode($json);
-foreach($json as $item){
-    $name = $item->name."";
-    $price = $item->price."";
-    $link = $item->link."";
+$data = json_decode($json);
+foreach($data as $item){
+    //$name = $item->name."";
+    //$price = $item->price."";
+    //$link = $item->link."";
     //echo "Item: ".$name." Price: ".price." Link: ".$link 
-    //echo <br>
+    echo "Item"
 }
 
 ?> </p>
