@@ -6,7 +6,13 @@
     </head>
     <body>
         <h1>OK</h1><br>
-        <p>
+        <table>
+        <tr>
+            <th>Id</th>
+            <th>Nazwa</th> 
+            <th>Cena</th>
+            <th>Link</th>
+        </tr>
        <?php  
     
     //echo "Chill";
@@ -14,14 +20,16 @@
 $json = file_get_contents('http://irizar.ehost.pl/martik97/items.json');
 $data = json_decode($json);
 foreach($data as $item){
-    $name = $item->name."";
-    $price = $item->price."";
-    $link = $item->link."";
-    echo "Item: ".$name." Price: ".price." Link: ".$link; 
-    //echo "Item"
-}
-
-?> </p>
+    ?>
+    <tr>        
+        <td> <?php echo $item->id."" ?></td>
+        <td> <?php echo $item->name."" ?></td>
+        <td> <?php echo $item->price."" ?></td>
+        <td> <?php echo $item->link."" ?></td>
+    </tr>
+<?php
+} 
+?> </table>
     </body>
 
 </html>
