@@ -10,6 +10,10 @@
        <?php  
     
     echo "Chill";
+
+$json = file_get_contents('http://irizar.ehost.pl/martik97/items.json');
+$obj = json_decode($json);
+var_dump($obj);
 ?> </h2>
     </body>
 
