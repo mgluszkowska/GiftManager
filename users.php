@@ -1,6 +1,7 @@
 <script type="text/javascript">
-  function redir() {
-    window.location = "gifts.php";
+  function redir(id) {
+      
+    //window.location = "gifts.php";
   }
 </script>
 
@@ -20,6 +21,7 @@
             <th>Imię</th> 
             <th>Nazwisko</th>
             <th></th>
+            <th></th>
         </tr>
        <?php  
 
@@ -31,10 +33,10 @@ foreach($data as $item){
         <td> <?php echo $item->id."" ?></td>
         <td> <?php echo $item->name."" ?></td>
         <td> <?php echo $item->surname."" ?></td>
+        <td> <button type="button"><a href="http://www.your-website.com">Click me</a></button></td>
         
         
-        
-        <td><input type="button" value="redirect" onclick="redir();" /></td>
+        <td><input type="button" value="Zobacz listę życzeń" onclick="redir();" /></td>
     </tr>
 <?php
 } 
@@ -42,7 +44,3 @@ foreach($data as $item){
     </body>
 
 </html>
-    
-if(isset($_POST['submit'])) {
-    header("Location: gifts.php");
-    }
