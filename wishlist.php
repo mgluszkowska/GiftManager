@@ -31,8 +31,6 @@ if ($_SERVER['REQUEST_METHOD']== "POST") {
 
     if ($err) {
       echo "cURL Error #:" . $err;
-    } else {
-      echo $response;
     }
 }
 
