@@ -27,5 +27,5 @@ $header = substr($head, 0, $header_size);
 $body = substr($head, $header_size);
 var_dump($header_size);
 var_dump($header);
-var_dump($body);
+echo $body.<br>;
 ?>
