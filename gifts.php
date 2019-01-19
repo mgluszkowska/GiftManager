@@ -12,7 +12,7 @@
     </head>
     <body>
         <h1>Lista wszystkich prezentów</h1><br>
-        <input type="button" value="Zobacz listę życzeń" onclick="redir();" />
+        <input type="button" value="Stwórz nowy" onclick="redir();" />
         <table>
         <tr>
             <th>Id</th>
