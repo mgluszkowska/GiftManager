@@ -25,7 +25,7 @@ var_dump($head);
 $header_size = curl_getinfo($ch, CURLINFO_HEADER_SIZE);
 $header = substr($head, 0, $header_size);
 $body = substr($head, $header_size);
-var_dump($header_size);
-var_dump($header);
-echo $body.<br>;
+//var_dump($header_size);
+//var_dump($header);
+echo $body;
 ?>
