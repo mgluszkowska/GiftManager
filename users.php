@@ -35,5 +35,5 @@ foreach($data as $item){
 </html>
     
 if(isset($_POST['sub'])) {
-    echo "Wishlist of a user will be here";
+    header('Location: gifts.php');
     }
