@@ -6,7 +6,7 @@
     </head>
     <body>
         <h1>OK</h1><br>
-        <h2>
+        <p>
        <?php  
     
     //echo "Chill";
@@ -17,11 +17,11 @@ foreach($json as $item){
     $name = $item->name."";
     $price = $item->price."";
     $link = $item->link."";
-    echo "Item: ".$name." Price: ".price." Link: ".$link 
-    echo <br>
+    //echo "Item: ".$name." Price: ".price." Link: ".$link 
+    //echo <br>
 }
 
-?> </h2>
+?> </p>
     </body>
 
 </html>
