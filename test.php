@@ -9,11 +9,18 @@
         <h2>
        <?php  
     
-    echo "Chill";
+    //echo "Chill";
 
 $json = file_get_contents('http://irizar.ehost.pl/martik97/items.json');
-$obj = json_decode($json);
-var_dump($obj);
+$json = json_decode($json);
+foreach($json as $item){
+    $name = $item->name."";
+    $price = $item->price."";
+    $link = $item->link."";
+    echo "Item: ".$name." Price: ".price." Link: ".$link 
+    echo <br>
+}
+
 ?> </h2>
     </body>
 
