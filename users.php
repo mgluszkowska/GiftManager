@@ -11,6 +11,7 @@
             <th>Id</th>
             <th>Imię</th> 
             <th>Nazwisko</th>
+            <th></th>
         </tr>
        <?php  
 
