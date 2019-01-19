@@ -1,3 +1,9 @@
+<script type="text/javascript">
+  function redir() {
+    window.location = "newgift.html";
+  }
+</script>
+
 <html>
     <head>
         <title>Wszystkie prezenty</title>
@@ -5,7 +11,8 @@
         <META http-equiv=content-type content="text/html; charset=iso-8859-2">
     </head>
     <body>
-        <h1>OK</h1><br>
+        <h1>Lista wszystkich prezentów</h1><br>
+        <input type="button" value="Zobacz listę życzeń" onclick="redir();" />
         <table>
         <tr>
             <th>Id</th>
@@ -14,8 +21,6 @@
             <th>Link</th>
         </tr>
        <?php  
-    
-    //echo "Chill";
 
 $json = file_get_contents('http://irizar.ehost.pl/martik97/items.json');
 $data = json_decode($json);
