@@ -4,8 +4,14 @@
         <meta charset="utf-8">
     </head>
     <body>
-       <div class="data" action="http://irizar.ehost.pl/martik97/gifts.php" method="get">
-        </div>
+       <?php
+            
+
+$json = file_get_contents('http://irizar.ehost.pl/martik97/items.json');
+$obj = json_decode($json);
+echo $obj;
+
+        ?>
     </body>
 
 </html>
