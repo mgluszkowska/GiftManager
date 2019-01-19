@@ -26,7 +26,7 @@ foreach($data as $item){
         
         
         
-        <td><form id="" action=" . <?php echo $_SERVER['PHP_SELF'] ?>" method="post">";
+        <td><form id="" action="" method="post">";
    <input type="submit" id="submit" name="submit" value="Zobacz listę życzeń" />
 </form></td>
     </tr>
