@@ -36,3 +36,40 @@ if ($_SERVER['REQUEST_METHOD']== "POST") {
     }
 }
 
+?>
+
+<html>
+    <head>
+        <title>Lista prezentów</title>
+        <meta charset="utf-8">
+        <META http-equiv=content-type content="text/html; charset=iso-8859-2">
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1>Lista prezentów</h1><br>
+        <table>
+        <tr>
+            <th>Id</th>
+            <th>Nazwa</th> 
+            <th>Cena</th>
+            <th>Link</th>
+        </tr>
+       <?php  
+
+$json = file_get_contents($response);
+$data = json_decode($json);
+foreach($data as $item){
+    ?>
+    <tr>        
+        <td> <?php echo $item->id."" ?></td>
+        <td> <?php echo $item->name."" ?></td>
+        <td> <?php echo $item->price."" ?></td>
+        <td> <?php echo $item->link."" ?></td>
+    </tr>
+<?php
+} 
+?> </table>
+    </body>
+
+</html>
+
