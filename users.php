@@ -24,7 +24,7 @@ foreach($data as $item){
         <td> <?php echo $item->name."" ?></td>
         <td> <?php echo $item->surname."" ?></td>
         <td><form action="submit" name="post">
-            <button type="submit" name="sub" value=<?php $item->id ?>>Zobacz listę życzeń</button>
+            <button type="submit" name="sub" value=<?php echo $item->id ?>>Zobacz listę życzeń</button>
             </form></td>
     </tr>
 <?php
