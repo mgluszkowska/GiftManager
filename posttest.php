@@ -14,7 +14,7 @@ curl_setopt_array($curl, array(
   CURLOPT_HTTPHEADER => array(
     "Postman-Token: 1368197a-2612-4350-9ab5-05364ecef319",
     "cache-control: no-cache",
-    "content-type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW"
+    "content-type: multipart/form-data"
   ),
 ));
 
