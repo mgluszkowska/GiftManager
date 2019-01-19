@@ -1,6 +1,6 @@
 <script type="text/javascript">
   function function() {
-      <?php echo "Popup text" ?>
+      <?php echo "text" ?>
       var popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
     //window.location = "gifts.php";
