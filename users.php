@@ -22,6 +22,7 @@ foreach($data as $item){
         <td> <?php echo $item->id."" ?></td>
         <td> <?php echo $item->name."" ?></td>
         <td> <?php echo $item->surname."" ?></td>
+        <button type="button">Zobacz listę życzeń</button>
     </tr>
 <?php
 } 
