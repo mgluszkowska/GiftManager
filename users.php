@@ -23,9 +23,12 @@ foreach($data as $item){
         <td> <?php echo $item->id."" ?></td>
         <td> <?php echo $item->name."" ?></td>
         <td> <?php echo $item->surname."" ?></td>
-        <td><form action="" name="post">
-            <button type="submit" name="sub" value=<?php echo $item->id ?>>Zobacz listę życzeń</button>
-            </form></td>
+        
+        
+        
+        <td><form id="" action=" . <?php echo $_SERVER['PHP_SELF'] ?>" method="post">";
+   <input type="submit" id="submit" name="submit" value="Zobacz listę życzeń" />
+</form></td>
     </tr>
 <?php
 } 
@@ -34,6 +37,6 @@ foreach($data as $item){
 
 </html>
     
-if(isset($_POST['sub'])) {
-    header('Location: gifts.php');
+if(isset($_POST['submit'])) {
+    header("Location: gifts.php");
     }
